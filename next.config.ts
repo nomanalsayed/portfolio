@@ -16,7 +16,6 @@ const nextConfig: NextConfig = {
   },
   
   // Enable SWC minification for faster builds
-  swcMinify: true,
   
   // Compiler options
   compiler: {

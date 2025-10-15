@@ -17,7 +17,13 @@ export default function Home() {
         <Hero />
 
         {/* Projects Section */}
-        <section className="max-w-[1024px] mx-auto px-6 py-24">
+        <section id="work" className="max-w-[1024px] mx-auto px-6 py-24" aria-label="Featured projects">
+          <div className="mb-16 text-center">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Featured Work</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Explore a selection of projects where design meets innovation, delivering measurable results for leading companies.
+            </p>
+          </div>
           <div className="space-y-10">
             <ProjectCard
               badge="Fintech"

@@ -59,18 +59,25 @@ export default function About() {
             visibleItems.length > 0 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          <h2 className="text-5xl font-bold text-foreground mb-8">About</h2>
-          <div className="space-y-6 text-muted-foreground leading-relaxed">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8 leading-tight">
+            Crafting Digital Experiences That Drive Results
+          </h2>
+          <div className="space-y-6 text-base md:text-lg text-muted-foreground leading-relaxed">
             <p>
-              Goran is a versatile product designer with 16 years of experience in the design industry, offering a
-              unique blend of skills and expertise. With a strong foundation in UI/UX design, front-end development,
-              business analysis, and product management, Goran excels at orchestrating successful projects from
-              inception to completion.
+              With 16 years of experience in the design industry, I bring a unique blend of expertise in UI/UX design, 
+              front-end development, business analysis, and product management. My approach goes beyond aesthetics—I 
+              orchestrate successful projects from inception to completion, ensuring every detail aligns with business goals.
             </p>
             <p>
-              His multidisciplinary approach enables Goran to see the bigger picture, encompassing branding, design,
-              marketing, and copywriting aspects within his problem-solving repertoire.
+              My multidisciplinary background enables me to see the complete picture, seamlessly integrating branding, 
+              design, marketing, and strategic thinking into cohesive solutions. I've helped startups scale, enterprises 
+              innovate, and teams build products that users love.
             </p>
+            <div className="pt-4 flex flex-wrap gap-3">
+              <div className="px-4 py-2 bg-muted/50 rounded-full text-sm font-medium">16+ Years Experience</div>
+              <div className="px-4 py-2 bg-muted/50 rounded-full text-sm font-medium">50+ Projects Delivered</div>
+              <div className="px-4 py-2 bg-muted/50 rounded-full text-sm font-medium">Framer Certified</div>
+            </div>
           </div>
         </div>
       </div>

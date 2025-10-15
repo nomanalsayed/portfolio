@@ -25,35 +25,42 @@ export default function Header() {
         className={`fixed top-6 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 ${
           isScrolled ? 'top-4' : ''
         }`}
+        role="banner"
       >
         <nav
-          className={`flex items-center gap-1 bg-card/80 backdrop-blur-xl rounded-full px-3 py-2 border border-border/50 transition-all duration-300 ${
+          className={`flex items-center gap-1 bg-card/80 backdrop-blur-xl rounded-full px-3 py-2 transition-all duration-300 ${
             isScrolled ? 'shadow-xl' : 'shadow-lg'
           }`}
+          role="navigation"
+          aria-label="Main navigation"
         >
           <Link
-            href="#home"
-            className="text-foreground hover:bg-muted/50 transition-all duration-200 text-xs font-medium px-4 py-1.5 rounded-full"
+            href="#work"
+            className="text-foreground hover:bg-muted/50 transition-all duration-200 text-sm font-medium px-5 py-2 rounded-full"
+            aria-label="Navigate to featured work section"
           >
-            Home
+            Work
           </Link>
           <Link
             href="#about"
-            className="text-foreground hover:bg-muted/50 transition-all duration-200 text-xs font-medium px-4 py-1.5 rounded-full"
+            className="text-foreground hover:bg-muted/50 transition-all duration-200 text-sm font-medium px-5 py-2 rounded-full"
+            aria-label="Navigate to about section"
           >
             About
           </Link>
           <Link
-            href="#contact"
-            className="text-foreground hover:bg-muted/50 transition-all duration-200 text-xs font-medium px-4 py-1.5 rounded-full"
+            href="#experience"
+            className="text-foreground hover:bg-muted/50 transition-all duration-200 text-sm font-medium px-5 py-2 rounded-full"
+            aria-label="Navigate to experience section"
           >
-            Contact
+            Experience
           </Link>
           <Link
-            href="#login"
-            className="text-foreground hover:bg-muted/50 transition-all duration-200 text-xs font-medium px-4 py-1.5 rounded-full"
+            href="#contact"
+            className="text-foreground bg-muted/30 hover:bg-muted/50 transition-all duration-200 text-sm font-medium px-5 py-2 rounded-full"
+            aria-label="Navigate to contact section"
           >
-            Login
+            Contact
           </Link>
         </nav>
       </header>

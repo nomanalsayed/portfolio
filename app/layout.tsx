@@ -14,10 +14,24 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Goran Babarogic - Product Designer & Framer Developer",
+  title: "Noman Al Sayed - Product Designer & Framer Expert",
   description:
-    "Framer Expert & Lead Product Designer with 16 years of experience in SaaS, fintech, AI and tech startups.",
-  generator: "v0.app",
+    "Award-winning Product Designer & Framer Expert with 16+ years crafting exceptional digital experiences for SaaS, fintech, and AI-driven startups. Specializing in UI/UX design, design systems, and product strategy.",
+  keywords: ["Product Designer", "Framer Expert", "UI/UX Design", "SaaS Design", "Fintech Design", "Design Systems", "Product Strategy"],
+  authors: [{ name: "Noman Al Sayed" }],
+  creator: "Noman Al Sayed",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    title: "Noman Al Sayed - Product Designer & Framer Expert",
+    description: "Award-winning Product Designer with 16+ years of experience in SaaS, fintech, and AI startups.",
+    siteName: "Noman Al Sayed Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Noman Al Sayed - Product Designer & Framer Expert",
+    description: "Award-winning Product Designer with 16+ years of experience in SaaS, fintech, and AI startups.",
+  },
 }
 
 export default function RootLayout({

@@ -77,7 +77,7 @@ export default function Experience() {
   }, [isVisible])
 
   return (
-    <section ref={sectionRef} className="relative max-w-[1024px] mx-auto px-8 py-24 overflow-hidden">
+    <section id="experience" ref={sectionRef} className="relative max-w-[1024px] mx-auto px-8 py-24 overflow-hidden">
       <div
         className="absolute inset-0 opacity-[0.03] dark:opacity-[0.08]"
         style={{

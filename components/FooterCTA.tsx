@@ -26,7 +26,7 @@ export default function FooterCTA() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="relative py-32 overflow-hidden max-w-[1024px] mx-auto px-8">
+    <section id="contact" ref={sectionRef} className="relative py-32 overflow-hidden max-w-[1024px] mx-auto px-8">
       <div className="text-center relative z-10">
         <h2
           className={`text-6xl font-bold text-foreground mb-6 text-balance transition-all duration-1000 ${
