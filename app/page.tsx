@@ -4,17 +4,11 @@ import ProjectCard from "@/components/ProjectCard"
 import About from "@/components/About"
 import SkillsTools from "@/components/SkillsTools"
 import Experience from "@/components/Experience"
-<<<<<<< HEAD
-import FooterCTA from "@/components/FooterCTA"
-import Footer from "@/components/Footer"
-
-=======
 import Testimonials from "@/components/Testimonials"
 import FooterCTA from "@/components/FooterCTA"
 import Footer from "@/components/Footer"
 
 
->>>>>>> f2e65fe0 (Initial commit)
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
@@ -23,13 +17,8 @@ export default function Home() {
         <Hero />
 
         {/* Projects Section */}
-<<<<<<< HEAD
-        <section className="max-w-[1024px] mx-auto px-6 py-12">
-          <div className="space-y-6">
-=======
         <section className="max-w-[1024px] mx-auto px-6 py-24">
           <div className="space-y-10">
->>>>>>> f2e65fe0 (Initial commit)
             <ProjectCard
               badge="Fintech"
               title="Finance intelligence with Fintelli"
@@ -39,11 +28,7 @@ export default function Home() {
                 { label: "User Retention", value: "60%" },
                 { label: "User Satisfaction", value: "5*" },
               ]}
-<<<<<<< HEAD
-              link="#"
-=======
               link="/case-study/fintelli"
->>>>>>> f2e65fe0 (Initial commit)
               bgColor="bg-[#d4e8d4]"
             />
 
@@ -101,11 +86,7 @@ export default function Home() {
           </div>
         </section>
 
-<<<<<<< HEAD
-=======
         <Testimonials />
-
->>>>>>> f2e65fe0 (Initial commit)
         <About />
         <SkillsTools />
         <Experience />

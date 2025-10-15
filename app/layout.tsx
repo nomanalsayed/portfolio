@@ -10,10 +10,7 @@ const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
-<<<<<<< HEAD
-=======
   weight: ["300", "400", "500", "600", "700", "800"],
->>>>>>> f2e65fe0 (Initial commit)
 })
 
 export const metadata: Metadata = {

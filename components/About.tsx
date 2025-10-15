@@ -1,31 +1,24 @@
-<<<<<<< HEAD
-=======
-"use client"
+'use client'
 
-import { useEffect, useRef, useState } from "react"
-import { useIntersectionObserver } from "@/lib/hooks"
+import { useEffect, useRef, useState } from 'react'
+import { useIntersectionObserver } from '@/lib/hooks'
 
->>>>>>> f2e65fe0 (Initial commit)
 const testimonials = [
   {
-    company: "PerkUp",
-    quote: "He consistently exceeds our expectations",
+    company: 'PerkUp',
+    quote: 'He consistently exceeds our expectations',
   },
   {
-    company: "FLYR",
-    quote: "Lead design department successfully and built us a scalable design system",
+    company: 'FLYR',
+    quote: 'Lead design department successfully and built us a scalable design system',
   },
   {
-    company: "Comet",
-    quote: "Contribute in valuable & meaningful ways to our platform",
+    company: 'Comet',
+    quote: 'Contribute in valuable & meaningful ways to our platform',
   },
 ]
 
 export default function About() {
-<<<<<<< HEAD
-  return (
-    <section id="about" className="max-w-[1024px] mx-auto px-8 py-24">
-=======
   const sectionRef = useRef<HTMLElement>(null)
   const isVisible = useIntersectionObserver(sectionRef, { threshold: 0.2 })
   const [visibleItems, setVisibleItems] = useState<number[]>([])
@@ -34,8 +27,8 @@ export default function About() {
     if (isVisible) {
       const timers = testimonials.map((_, index) =>
         setTimeout(() => {
-          setVisibleItems((prev) => [...prev, index])
-        }, index * 200)
+          setVisibleItems(prev => [...prev, index])
+        }, index * 200),
       )
       return () => timers.forEach(clearTimeout)
     }
@@ -43,22 +36,17 @@ export default function About() {
 
   return (
     <section id="about" ref={sectionRef} className="max-w-[1024px] mx-auto px-8 py-24">
->>>>>>> f2e65fe0 (Initial commit)
       <div className="grid lg:grid-cols-2 gap-16">
         {/* Testimonials */}
         <div className="space-y-8">
           {testimonials.map((testimonial, index) => (
-<<<<<<< HEAD
-            <div key={index} className="bg-card/50 border border-border rounded-3xl p-8">
-=======
             <div
               key={index}
               className={`bg-card/50 border border-border rounded-3xl p-8 transition-all duration-700 hover:scale-105 hover:shadow-xl ${
-                visibleItems.includes(index) ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                visibleItems.includes(index) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
               style={{ transitionDelay: `${index * 150}ms` }}
             >
->>>>>>> f2e65fe0 (Initial commit)
               <div className="text-sm font-bold text-foreground mb-4">{testimonial.company}</div>
               <p className="text-2xl text-muted-foreground leading-relaxed">"{testimonial.quote}"</p>
             </div>
@@ -66,15 +54,11 @@ export default function About() {
         </div>
 
         {/* About Text */}
-<<<<<<< HEAD
-        <div>
-=======
         <div
           className={`transition-all duration-1000 ${
-            visibleItems.length > 0 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+            visibleItems.length > 0 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
->>>>>>> f2e65fe0 (Initial commit)
           <h2 className="text-5xl font-bold text-foreground mb-8">About</h2>
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p>
