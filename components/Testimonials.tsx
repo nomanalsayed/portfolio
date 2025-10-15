@@ -120,7 +120,7 @@ export default function Testimonials() {
         {[...testimonials, ...testimonials].map((testimonial, index) => (
           <div
             key={`${testimonial.id}-${index}`}
-            className="flex-shrink-0 w-[340px] md:w-[400px] bg-card dark:bg-accent border border-border rounded-2xl p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+            className="flex-shrink-0 w-[340px] md:w-[400px] bg-card dark:bg-popover border border-border rounded-2xl p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
           >
             {/* Rating */}
             <div className="flex items-center gap-1 mb-4">

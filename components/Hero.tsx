@@ -55,12 +55,10 @@ export default function Hero() {
                 className="object-cover"
               />
             </div>
-            {/* Pro Expert Badge */}
+            {/* Open to Job Badge with Blinking Dot */}
             <div className="mt-4 bg-background border border-border px-3 py-1 rounded-full flex items-center gap-1.5 mx-auto w-fit">
-              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 1L10 6L15 6L11 9.5L13 15L8 11.5L3 15L5 9.5L1 6L6 6L8 1Z" fill="currentColor" />
-              </svg>
-              <span className="text-xs font-medium text-foreground">Pro Expert</span>
+              <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
+              <span className="text-xs font-medium text-foreground">Open to Job</span>
             </div>
           </div>
         </div>
