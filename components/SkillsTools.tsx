@@ -57,7 +57,7 @@ export default function SkillsTools() {
             {skills.map((skill, index) => (
               <span
                 key={index}
-                className={`px-4 py-2 bg-card/50 border border-border rounded-full text-muted-foreground text-sm transition-all duration-500 hover:scale-110 hover:bg-card hover:shadow-md ${
+                className={`px-4 py-2 bg-card/50 border border-gray-200 dark:border-gray-800 rounded-full text-muted-foreground text-sm transition-all duration-500 hover:scale-110 hover:bg-card hover:shadow-md ${
                   visibleSkills.includes(index) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                 }`}
                 style={{ transitionDelay: `${index * 50}ms` }}
@@ -75,7 +75,7 @@ export default function SkillsTools() {
             {tools.map((tool, index) => (
               <div
                 key={index}
-                className={`flex items-center gap-3 px-4 py-2 bg-card/50 border border-border rounded-full text-muted-foreground text-sm transition-all duration-500 hover:scale-110 hover:bg-card hover:shadow-md ${
+                className={`flex items-center gap-3 px-4 py-2 bg-card/50 border border-gray-200 dark:border-gray-800 rounded-full text-muted-foreground text-sm transition-all duration-500 hover:scale-110 hover:bg-card hover:shadow-md ${
                   visibleTools.includes(index) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                 }`}
                 style={{ transitionDelay: `${skills.length * 50 + index * 80}ms` }}

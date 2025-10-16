@@ -6,7 +6,7 @@ export default function ScheduleMeetingButton() {
   return (
     <Link
       href="#contact"
-      className="inline-flex items-center gap-3 px-3 py-2 rounded-full bg-[var(--btn-bg)] text-[var(--btn-text)] border border-border/50 hover:opacity-90 transition-all duration-300 hover:scale-105 hover:shadow-xl"
+      className="inline-flex items-center gap-3 px-3 py-2 rounded-full bg-[var(--btn-bg)] text-[var(--btn-text)] border border-gray-200 dark:border-gray-800 hover:opacity-90 transition-all duration-300 hover:scale-105 hover:shadow-xl"
     >
       <div className="w-10 h-10 rounded-full overflow-hidden">
         <Image

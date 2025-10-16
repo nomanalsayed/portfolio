@@ -88,22 +88,22 @@ export default function Experience() {
       />
 
       <div className="relative z-10">
-        <h2 className="text-4xl font-bold text-foreground mb-16">Experience</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-16">Experience</h2>
 
-        <div className="space-y-0 border-t border-border">
+        <div className="space-y-0 border-t border-gray-200 dark:border-gray-800">
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className={`border-b border-border py-8 transition-all duration-700 ${
+              className={`border-b border-gray-200 dark:border-gray-800 py-8 transition-all duration-700 ${
                 visibleItems.includes(index) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                 <div className="flex-1">
-                  <h3 className="text-lg font-medium text-foreground">{exp.role}</h3>
-                  <div className="flex items-center gap-3 text-muted-foreground text-sm">
-                    <span>{exp.company}</span>
+                  <h3 className="text-xl font-semibold text-foreground mb-2">{exp.role}</h3>
+                  <div className="flex items-center gap-3 text-muted-foreground text-base">
+                    <span className="font-medium">{exp.company}</span>
                     {exp.type && (
                       <>
                         <span className="w-1 h-1 bg-border rounded-full" />
@@ -113,7 +113,7 @@ export default function Experience() {
                   </div>
                 </div>
                 <div className="flex flex-col md:items-end gap-1">
-                  <span className="text-sm text-muted-foreground">{exp.period}</span>
+                  <span className="text-base text-muted-foreground">{exp.period}</span>
                 </div>
               </div>
             </div>

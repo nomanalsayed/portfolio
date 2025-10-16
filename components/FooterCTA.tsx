@@ -29,7 +29,7 @@ export default function FooterCTA() {
     <section id="contact" ref={sectionRef} className="relative py-32 overflow-hidden max-w-[1024px] mx-auto px-8">
       <div className="text-center relative z-10">
         <h2
-          className={`text-6xl font-bold text-foreground mb-6 text-balance transition-all duration-1000 ${
+          className={`text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-8 text-balance leading-tight transition-all duration-1000 ${
             isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-90'
           }`}
         >
@@ -38,7 +38,7 @@ export default function FooterCTA() {
           working together?
         </h2>
         <p
-          className={`text-xl text-muted-foreground mb-12 transition-all duration-1000 delay-200 ${
+          className={`text-base md:text-lg text-muted-foreground mb-12 max-w-xl mx-auto transition-all duration-1000 delay-200 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >

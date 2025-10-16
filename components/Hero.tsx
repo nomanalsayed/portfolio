@@ -57,14 +57,17 @@ export default function Hero() {
             </div>
             {/* Open to Job Badge with Blinking Dot */}
             <div className="mt-4 bg-background border border-border px-3 py-1 rounded-full flex items-center gap-1.5 mx-auto w-fit">
-              <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
+              <div className="relative">
+                <div className="absolute w-3 h-3 rounded-full bg-green-500 animate-ping opacity-75"></div>
+                <div className="w-3 h-3 rounded-full bg-green-500"></div>
+              </div>
               <span className="text-xs font-medium text-foreground">Open to Job</span>
             </div>
           </div>
         </div>
 
         <h1
-          className={`text-6xl font-bold text-foreground mb-6 leading-[1.1] text-center text-balance transition-all duration-1000 delay-200 ${
+          className={`text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-8 leading-[1.1] text-center text-balance transition-all duration-1000 delay-200 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
@@ -74,7 +77,7 @@ export default function Hero() {
         </h1>
 
         <p
-          className={`text-lg md:text-xl text-muted-foreground text-center leading-relaxed mb-8 max-w-2xl mx-auto transition-all duration-1000 delay-300 ${
+          className={`text-base md:text-lg text-muted-foreground text-center leading-relaxed mb-10 max-w-2xl mx-auto transition-all duration-1000 delay-300 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
